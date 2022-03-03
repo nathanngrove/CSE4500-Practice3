@@ -234,7 +234,7 @@ return [
             'type'         => 'fullscreen-widget',
             'topnav_right' => true,
         ],
-        
+
         [
             'type' => 'sidebar-menu-search',
             'text' => 'Search',
@@ -242,7 +242,7 @@ return [
         [
             'text' => 'To Do\'s',
             'url'  => 'todos',
-            'icon' => 'fas fa-fw fa-list-check',
+            'icon' => 'fas fa-fw fa-file',
         ],
         [         
             'text' => 'Calendar',
