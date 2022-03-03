@@ -227,7 +227,7 @@ return [
     'menu' => [
         [
             'type' => 'sidebar-menu-search',
-            'text' => 'search',
+            'text' => 'Search',
         ],     
         [
             'text' => 'To Do\'s',
@@ -282,7 +282,7 @@ return [
 
     'plugins' => [
         'Datatables' => [
-            'active' => false,
+            'active' => true,
             'files' => [
                 [
                     'type' => 'js',
