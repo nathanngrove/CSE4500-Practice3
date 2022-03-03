@@ -7,7 +7,7 @@
 @stop
 
 @section('content')
-    <h1 style="color: red;">404 Error - <span style="color: yellow;"><i class="fa-solid fa-circle-exclamation"></i></span> Page Not Found</h1>
+    <i class="fa-solid fa-circle-exclamation"></i><h1 style="color: red;">404 Error - Page Not Found</h1>
     <p>You can return home by clicking <a href="/">here</a></p>
 @stop
 
@@ -17,4 +17,5 @@
 
 @section('js')
     <script> console.log('Hi!'); </script>
+    <script src="https://kit.fontawesome.com/2bff5bca0b.js" crossorigin="anonymous"></script>
 @stop
