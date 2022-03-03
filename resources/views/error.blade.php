@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
 @section('title', 'Error')
-<head>
-    <script src="https://kit.fontawesome.com/2bff5bca0b.js" crossorigin="anonymous">
-<head/>
+<head>    
+    <script src="https://kit.fontawesome.com/2bff5bca0b.js" crossorigin="anonymous"></script>
+</head>
 @section('content_header')
     <h1>Error</h1>
 @stop
@@ -14,7 +14,7 @@
 @stop
 
 @section('css')
-    </script>
+    
     <link rel="stylesheet" href="/css/admin_custom.css">
 @stop
 
