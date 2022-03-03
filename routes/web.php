@@ -37,6 +37,10 @@ Route::get('/events-feed', function () {
     "end" => "2022-02-28T18:45:00")));
 });
 
+Route::fallback(function () {
+    return view('error');
+});
+
 Route::get('db-test', function () {
     try {
         \DB::connection()->getPDO;
