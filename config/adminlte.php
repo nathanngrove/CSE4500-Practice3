@@ -226,13 +226,23 @@ return [
 
     'menu' => [
         [
+            'type'         => 'navbar-search',
+            'text'         => 'search',
+            'topnav_right' => true,
+        ],
+        [
+            'type'         => 'fullscreen-widget',
+            'topnav_right' => true,
+        ],
+        
+        [
             'type' => 'sidebar-menu-search',
             'text' => 'Search',
         ],     
         [
             'text' => 'To Do\'s',
             'url'  => 'todos',
-            'icon' => 'fas fa-fw fa-file',
+            'icon' => 'fas fa-fw fa-list-check',
         ],
         [         
             'text' => 'Calendar',
