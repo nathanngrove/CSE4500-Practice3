@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Error')
+@section('title', 'Events')
 
 @section('content')
     {{ echo json_encode(array(array("title" => "CSE4500 Class",
