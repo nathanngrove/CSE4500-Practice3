@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TodoController;
+use App\Http\Controllers\CalendarEventController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,12 +32,17 @@ Route::get('/board', function () {
 });
 
 Route::get('/events-feed', function () {
-    echo json_encode(array(array("title" => "CSE4500 Class",
+    /*echo json_encode(array(array("title" => "CSE4500 Class",
     "start" => "2022-02-23T17:30:00",
     "end" => "2022-02-23T18:45:00"), array("title" => "CSE4500 Class",
     "start" => "2022-02-28T17:30:00",
-    "end" => "2022-02-28T18:45:00")));
+    "end" => "2022-02-28T18:45:00")));*/
+    return view('events-feed');
 });
+
+Route::resource('/todos', TodoController::class);
+
+Route::resource('/calendar-events', CalendarEventController::class);
 
 Route::get('/db-test', function () {
     try {         
