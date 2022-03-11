@@ -37,10 +37,6 @@ Route::get('/events-feed', function () {
     "end" => "2022-02-28T18:45:00")));
 });
 
-Route::fallback(function () {
-    return view('error');
-});
-
 Route::get('/db-test', function () {
     try {         
          echo \DB::connection()->getDatabaseName();     
@@ -53,3 +49,8 @@ Route::get('/db-migrate', function () {
     Artisan::call('migrate');
     echo Artisan::output();
 });
+
+Route::fallback(function () {
+    return view('error');
+});
+
