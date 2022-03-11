@@ -42,6 +42,8 @@ class CalendarEventController extends Controller
             'end_at' => 'required',
         ]);
 
+        console.log($request->start_at);
+
         $event = CalendarEvent::create([
             'title' => $request->title,
             'start_at' => $request->start_at,
