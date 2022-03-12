@@ -15,7 +15,6 @@ class CalendarEventController extends Controller
     public function index()
     {
         $calendarEvents = CalendarEvent::all();
-        json_encode($calendarEvents);
         return view('calendar', compact('calendarEvents'));
     }
 
@@ -42,8 +41,6 @@ class CalendarEventController extends Controller
             'start_at' => 'required',
             'end_at' => 'required',
         ]);
-
-        json_encode($request->start_at);
 
         $event = CalendarEvent::create([
             'title' => $request->title,
