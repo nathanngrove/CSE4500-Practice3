@@ -29,7 +29,7 @@
 $( document ).ready(function() {
     var calendar = new FullCalendar.Calendar($('#calendar')[0], {
       initialView: 'dayGridMonth',
-      events: {{<?php json_encode($calendarEvents) ?>}}
+      events: '/events-feed'
     });
     calendar.render();
 })

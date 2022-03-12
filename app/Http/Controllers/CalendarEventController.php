@@ -15,7 +15,7 @@ class CalendarEventController extends Controller
     public function index()
     {
         $calendarEvents = CalendarEvent::all();
-        return view('calendar', compact('calendarEvents'));
+        return view('events-feed', compact('calendarEvents'));
     }
 
     /**
