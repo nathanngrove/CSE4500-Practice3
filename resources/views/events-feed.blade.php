@@ -7,6 +7,15 @@
     "end" => "2022-02-23T18:45:00"), array("title" => "CSE4500 Class",
     "start" => "2022-02-28T17:30:00",
     "end" => "2022-02-28T18:45:00")));
-    echo json_encode($calendarEvents);
     ?>
+
+    @foreach($calendarEvents AS $event)
+        <?php
+        echo json_encode(
+            array("title" => "{{ $event->title }}",
+            "start" => "$event->start_at",
+            "end" => "$event->end_at")
+        );
+        ?>
+    @endforeach
 @stop
