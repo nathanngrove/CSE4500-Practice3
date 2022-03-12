@@ -48,7 +48,7 @@ class CalendarEventController extends Controller
             'end_at' => $request->end_at
         ]);
 
-        return $this->index();
+        return view('calendar');
     }
 
     /**
