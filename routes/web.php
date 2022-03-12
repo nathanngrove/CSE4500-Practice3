@@ -41,7 +41,7 @@ Route::get('/events-feed', function () {
 
 Route::resource('/todos', TodoController::class);
 
-Route::resource('/calendarEvents', CalendarEventController::class);
+Route::resource('/calendar', CalendarEventController::class);
 
 Route::get('/db-test', function () {
     try {         
